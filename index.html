@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Recipe Collection</h1>
+    <input type="search" id="searchInput" placeholder="Search recipes or ingredients..." />
+  </header>
+
+  <main>
+    <section id="recipeGrid" class="grid-container"></section>
+  </main>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modalClose" class="close-btn" aria-label="Close">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <h3>Ingredients</h3>
+      <ul id="modalIngredients"></ul>
+      <h3>Instructions</h3>
+      <p id="modalInstructions"></p>
+      <button id="favoriteBtn" class="favorite-btn">Add to Favorites</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
